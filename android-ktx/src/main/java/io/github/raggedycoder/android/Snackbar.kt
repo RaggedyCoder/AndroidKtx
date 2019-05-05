@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 
 inline fun View.showSnackbar(
-    message: CharSequence, duration: Int,
+    message: CharSequence, duration: Int = Snackbar.LENGTH_SHORT,
     actionText: CharSequence? = null,
     noinline action: (() -> Unit)? = null
 ) {
@@ -29,25 +29,25 @@ inline fun View.showSnackbar(
 }
 
 inline fun View.showSnackbar(
-    @StringRes messageResId: Int, duration: Int,
+    @StringRes messageResId: Int, duration: Int = Snackbar.LENGTH_SHORT,
     actionText: CharSequence? = null,
     noinline action: (() -> Unit)? = null
 ) = showSnackbar(resources.getString(messageResId), duration, actionText, action)
 
 inline fun Activity.showSnackbar(
-    message: CharSequence, duration: Int,
+    message: CharSequence, duration: Int = Snackbar.LENGTH_SHORT,
     actionText: CharSequence? = null,
     noinline action: (() -> Unit)? = null
 ) = findViewById<View>(android.R.id.content)?.showSnackbar(message, duration, actionText, action)
 
 inline fun Activity.showSnackbar(
-    @StringRes messageResId: Int, duration: Int,
+    @StringRes messageResId: Int, duration: Int = Snackbar.LENGTH_SHORT,
     actionText: CharSequence? = null,
     noinline action: (() -> Unit)? = null
 ) = showSnackbar(getString(messageResId), duration, actionText, action)
 
 inline fun Fragment.showSnackbar(
-    message: CharSequence, duration: Int,
+    message: CharSequence, duration: Int = Snackbar.LENGTH_SHORT,
     actionText: CharSequence? = null,
     noinline action: (() -> Unit)? = null
 ) {
@@ -57,7 +57,7 @@ inline fun Fragment.showSnackbar(
 }
 
 inline fun Fragment.showSnackbar(
-    @StringRes messageResId: Int, duration: Int,
+    @StringRes messageResId: Int, duration: Int = Snackbar.LENGTH_SHORT,
     actionText: CharSequence? = null,
     noinline action: (() -> Unit)? = null
 ) {
