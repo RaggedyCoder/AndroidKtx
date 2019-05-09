@@ -11,12 +11,12 @@ Download [the latest JAR][1] or grab via Maven:
 <dependency>
   <groupId>io.github.raggedycoder.android</groupId>
   <artifactId>android-ktx</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 or Gradle:
 ```groovy
-implementation 'io.github.raggedycoder.android:android-ktx:1.0.1'
+implementation 'io.github.raggedycoder.android:android-ktx:1.0.2'
 ```
 
 Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].
@@ -39,5 +39,5 @@ License
     limitations under the License.
 
 
- [1]: https://repo1.maven.org/maven2/io/github/raggedycoder/android/android-ktx/1.0.1/android-ktx-1.0.1.aar
+ [1]: https://repo1.maven.org/maven2/io/github/raggedycoder/android/android-ktx/1.0.2/android-ktx-1.0.2.aar
  [snap]: https://oss.sonatype.org/content/repositories/snapshots/
