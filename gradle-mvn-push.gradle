@@ -20,7 +20,7 @@ apply plugin: 'signing'
 version = getProperty("version.name")
 group = getProperty("group.name")
 
-def authPropertiesFile = rootProject.file("../AndroidKtxAuthKey/auth.properties")
+def authPropertiesFile = rootProject.file("auth.properties")
 def authProperties = new Properties()
 authProperties.load(new FileInputStream(authPropertiesFile))
 allprojects { ext."signing.keyId" = authProperties["signing.keyId"] }
