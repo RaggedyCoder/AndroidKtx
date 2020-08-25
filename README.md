@@ -6,7 +6,7 @@ This library extends the current Android Core-Ktx library to feature some more e
 Download
 --------
 
-Download [the latest JAR][1] or grab via Maven:
+Download [the latest AAR][1] or grab via Maven:
 ```xml
 <dependency>
   <groupId>io.github.raggedycoder.android</groupId>
